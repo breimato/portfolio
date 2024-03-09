@@ -1,11 +1,53 @@
-<header class="flex justify-between items-center py-3 w-[1120px]">
+---
+// Importa Tailwind para poder usarlo en este componente
+import "tailwindcss/tailwind.css";
+---
+
+<header class="bg-gray-900 text-white w-full">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <div
+        class="container mx-auto flex flex-wrap p-10 flex-col md:flex-row items-center"
+    >
+        <a
+            href="/"
+            class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
+        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    d="M12 2L2 7l10 5 10-5-10-5zm0 8v8l8 4V14l-8-4zm0 0l-8 4v8l8-4V10z"
+                ></path>
+            </svg>
+            <span class="ml-3 text-xl">Breixo Mato Martínez</span>
+        </a>
+        <nav
+            class="md:ml-auto md:mr-24 flex flex-wrap items-center text-base justify-center"
+        >
+            <a href="#about" class="mr-5 hover:text-gray-400">About</a>
+            <a href="#projects" class="mr-5 hover:text-gray-400">Projects</a>
+            <a href="#contact" class="mr-5 hover:text-gray-400">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- <header class="bg-gray-800 text-white p-4">
     <img src="../../public/img/picture.jpg" alt="breixo foto" class="rounded-full w-32 h-32">
 
+    
     <nav>
         <a href="/" class="mx-2">Home</a>
         <a href="/about" class="mx-2">About</a>
         <a href="/projects" class="mx-2">Projects</a>
         <a href="/contact" class="mx-2">Contact</a>
     </nav>
-</header>
-
+</header> -->
